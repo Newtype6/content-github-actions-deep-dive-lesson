@@ -62,5 +62,5 @@ jobs:
             aws lambda update-function-code \
             --function-name GHA-Test-Function \
             --s3-bucket gha-test-bucket8984723 \
-            --s3-key ${{github.sha}}.zip \
+            --s3-key ${{github.repository}}/${{github.sha}}.zip \
             --publish
